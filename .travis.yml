@@ -40,6 +40,7 @@ matrix:
       apt:
         packages:
         - valgrind
+        - libmagic-dev
   - env: BUILD_TYPE=valgrind CI_CZMQ_VER=4
     os: linux
     dist: trusty
@@ -47,10 +48,10 @@ matrix:
     addons:
       apt:
         packages:
-        - asciidoc
-        - xmlto
         - valgrind
         - libmagic-dev
+#        - asciidoc
+#        - xmlto
 
 addons:
   sources:
